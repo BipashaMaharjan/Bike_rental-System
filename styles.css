@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo-img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover Effect */
+nav ul li a:hover {
+    background-color: #555;
+    color: #ffcc00;
+}.hero {
+    background: url('HERO.png') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+}.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0 10px;
+}
+
+.cta-button:hover {
+    background-color: #333;
+    color: #ffcc00;
+}
+
+/* Featured Section */
+.featured {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.featured h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.featured-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.featured-item {
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.featured-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.featured-item h3 {
+    font-size: 1.8em;
+    margin: 10px 0;
+}
+
+.featured-item p {
+    font-size: 1em;
+    color: #555;
+}
+
+.featured-item .cta-button {
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}

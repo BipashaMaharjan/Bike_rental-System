@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Plus Jakarta Sans"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="BikeRental.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- nav section -->
+    <nav class="navBar">
+      <div class="miniNav">
+        <img class="navbarLogo" src="logo.png" />
+        <div class="searchBar">
+          <img class="searchImg" src="searchImg.svg" />
+          <input
+            class="searchField"
+            type="text"
+            placeholder="Search something here"
+          />
+          <img class="filterImg" src="filterImg.svg" />
+        </div>
+      </div>
+      <div class="menuItems">
+        <img class="likeImg" src="navLike.svg" alt="" />
+        <img class="notificationImg" src="Notification.svg" alt="" />
+        <img class="settingsImg" src="Settings.svg" alt="" />
+        <img class="profileImg" src="Profil.svg" alt="" />
+      </div>
+    </nav>
+    <!-- content page -->
+    <div class="contentPage">
+      <!-- Adsi Bike image section -->
+      <div class="rowBikes">
+        <div class="adsi">
+          <div class="adsiText">
+            <h2>The Best Platform for Bike Rental</h2>
+            <p>
+              Ease of doing a Bike rental safely and reliably. Of course at a
+              low price.
+            </p>
+          
+            <a href="register.php" class="button-link">Rental Bike</a>
+          
+
+          </div>
+          <div class="adsiBikeimg">
+            <img
+              src="Honda CB 200X.png"
+              alt="CB200X"
+              width="350"
+              height="300"
+            />
+          </div>
+        </div>
+
+        <!-- Adsii Bike image section -->
+        <div class="adsii">
+          <div class="adsiiText">
+            <h2>Easy way to rent a Bike at a low price</h2>
+            <p>
+              Providing cheap Bike rental services and safe and comfortable
+              facillities
+            </p>
+            <a href="register.php" class="button-link">Rental Bike</a>
+
+          </div>
+          <div class="adsiiBikeimg">
+            <img
+              src="CR Electric Proto.png"
+              alt="CR Electric Proto"
+              width="450"
+              height="450"
+            />
+          </div>
+        </div>
+        <!-- Adsiii Bike image section -->
+        <div class="adsiii">
+          <div class="adsiiiText">
+            <h2>Explore the City on Two Wheels</h2>
+            <p>Discover the city with our easy, eco-friendly bike rentals</p>
+            <a href="register.php" class="button-link">Rental Bike</a>
+          </div>
+          <div class="adsiiiBikeimg">
+            <img
+              src="Honda Unicorn.png"
+              alt="Honda Unicorn"
+              width="450"
+              height="350"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- pickup-container starts form here -->
+      <div class="pickup-container">
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="flexRadioDefault"
+            id="flexRadioDefault2"
+            checked
+          />
+          <label
+            class="form-check-label pickup-radio-label"
+            for="flexRadioDefault2"
+          >
+            Pick - Up
+          </label>
+        </div>
+        <div class="pickup-info">
+          <div class="pickup-location">
+            <h3 class="pickup-title">Location</h3>
+            <select class="dropdown-pickup" aria-label=" example">
+              <option selected>Select your city</option>
+              <option value="1">Kathmandu</option>
+              <option value="2">Bhaktapur</option>
+              <option value="3">Banepa</option>
+            </select>
+          </div>
+
+          <div class="pickup-divider"></div>
+          <div class="pickup-date">
+            <h3 class="pickup-title">Date</h3>
+            <input type="date"  aria-label="example">
+          </div>
+          <div class="pickup-divider"></div>
+
+          <div class="pickup-time">
+            <h3 class="pickup-title">Time</h3>
+            <input type="time"  aria-label=" example">
+             
+          </div>
+        </div>
+      </div>
+      <!-- swap button starts from here! -->
+      <!-- <div class="swapDiv">
+        <button class="swapBtn">
+          <img class="swapImg" src="Swap.svg" alt="Switch Button" />
+        </button>
+      </div> -->
+      <!-- swap button ends here -->
+
+      <!-- drop-off section starts form here! -->
+      <div class="dropoff-container">
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="flexRadioDefault"
+            id="flexRadioDefault2"
+            checked
+          />
+          <label
+            class="form-check-label dropoff-radio-label"
+            for="flexRadioDefault2"
+          >
+            Drop-Off
+          </label>
+        </div>
+        <div class="dropoff-info">
+          <div class="dropoff-location">
+            <h3 class="dropoff-title">Location</h3>
+            <select class="dropdown-dropoff" aria-label=" example">
+              <option selected>Select your city</option>
+              <option value="1">Kathmandu</option>
+              <option value="2">Bhaktapur</option>
+              <option value="3">Banepa</option>
+            </select>
+          </div>
+
+          <div class="dropoff-divider"></div>
+          <div class="dropoff-date">
+            <h3 class="dropoff-title">Date</h3>
+            <input type="date" >
+          </div>
+          <div class="dropoff-divider"></div>
+
+          <div class="dropoff-time">
+            <h3 class="dropoff-title">Time</h3>
+           <input type="time">
+          </div>
+        </div>
+      </div>
+
+      <!-- Catalogue Bike section starts form here-->
+      <div class="catalogueBike-heading">
+        <p class="pO">Popular Bike</p>
+      </div>
+
+      <div class="productBiked-row1">
+        <!-- this is row one-->
+        <div class="BikeBikeds">
+          <!-- this is starting of Biked -->
+          <div class="headLine">
+            <div class="BikedHead">
+              <h4>Honda Gold Wing</h4>
+              <p class="BikedParagraph">Sport</p>
+            </div>
+            <img class="redLike" src="Like.svg" alt="Like" />
+          </div>
+          <img
+            class="BikePosition"
+            src="honda gold wing.svg"
+            width="220"
+            height="190"
+            alt="Honda Gold Wing"
+          />
+
+          <!-- product details start from here -->
+          <div class="product-details">
+            <!-- gas-station division -->
+            <div class="productFeatures">
+              <div>
+                <img src="gas-station.svg" alt="gas-station" />
+              </div>
+              <div class="miniText">
+                <p>90L</p>
+              </div>
+            </div>
+            <!-- end of gas-station division -->
+
+            <!-- Manual-drive division -->
+            <div class="productFeatures">
+              <div>
+                <img src="Bike.svg" alt="manual-drive" />
+              </div>
+              <div class="miniText">
+                <p>Manual</p>
+              </div>
+            </div>
+            <!-- end of manual division -->
+
+            <!-- two people division -->
+            <div class="productFeatures">
+              <div>
+                <img src="profile-2user.svg" alt="two user" />
+              </div>
+              <div class="miniText">
+                <p>2 people</p>
+              </div>
+            </div>
+            <!-- end of two people division -->
+          </div>
+          <!-- product details finish here -->
+
+          <div class="product-Biked-footer">
+            <!-- price bar starts form here -->
+            <h2>
+              <span class="priceTag"> $99.00/ </span>
+              <span class="priceTime"> day </span>
+            </h2>
+            <!-- end of price bar -->
+            <a href="register.php" class="BikeRental">Rent</a>
+          </div>
+          <!-- end of rent button -->
+        </div>
+        <!-- end of one column -->
+        <div class="BikeBikeds">
+          <!-- this is starting of Biked -->
+          <div class="headLine">
+            <div class="BikedHead">
+              <h4>Honda SP 125</h4>
+              <p class="BikedParagraph">Sport</p>
+            </div>
+            <img class="redLike" src="emptyLike.svg" alt="Like" />
+          </div>
+          <img
+            class="BikePosition"
+            src="honda sp 125.svg"
+            alt="Honda sp 125"
+            width="220"
+            height="190"
+          />
+
+          <!-- product details start from here -->
+          <div class="product-details">
+            <!-- gas-station division -->
+            <div class="productFeatures">
+              <div>
+                <img src="gas-station.svg" alt="gas-station" />
+              </div>
+              <div class="miniText">
+                <p>80L</p>
+              </div>
+            </div>
+            <!-- end of gas-station division -->
+
+            <!-- Manual-drive division -->
+            <div class="productFeatures">
+              <div>
+                <img src="Bike.svg" alt="manual-drive" />
+              </div>
+              <div class="miniText">
+                <p>Manual</p>
+              </div>
+            </div>
+            <!-- end of manual division -->
+
+            <!-- two people division -->
+            <div class="productFeatures">
+              <div>
+                <img src="profile-2user.svg" alt="two user" />
+              </div>
+              <div class="miniText">
+                <p>2 people</p>
+              </div>
+            </div>
+            <!-- end of two people division -->
+          </div>
+          <!-- product details finish here -->
+
+          <div class="product-Biked-footer">
+            <!-- price bar starts form here -->
+            <h2>
+              <span class="priceTag"> $80.00/ </span>
+              <span class="priceTime"> day </span>
+              <p class="priceTime" style="text-decoration: line-through">
+                $100.00
+              </p>
+            </h2>
+            <!-- end of price bar -->
+            <a href="register.php" class="BikeRental">Rent</a>
+          </div>
+          <!-- end of rent button -->
+        </div>
+        <!-- end of one column -->
+        <div class="BikeBikeds">
+          <!-- this is starting of Biked -->
+          <div class="headLine">
+            <div class="BikedHead">
+              <h4>Honda CRF 300L</h4>
+              <p class="BikedParagraph">Sedan</p>
+            </div>
+            <img class="redLike" src="Like.svg" alt="Like" />
+          </div>
+          <img
+            class="BikePosition"
+            src="CRF 300L.png"
+            alt="CRF 300L"
+            width="220"
+            height="190"
+          />
+
+          <!-- product details start from here -->
+          <div class="product-details">
+            <!-- gas-station division -->
+            <div class="productFeatures">
+              <div>
+                <img src="gas-station.svg" alt="gas-station" />
+              </div>
+              <div class="miniText">
+                <p>70L</p>
+              </div>
+            </div>
+            <!-- end of gas-station division -->
+
+            <!-- Manual-drive division -->
+            <div class="productFeatures">
+              <div>
+                <img src="Bike.svg" alt="manual-drive" />
+              </div>
+              <div class="miniText">
+                <p>Manual</p>
+              </div>
+            </div>
+            <!-- end of manual division -->
+
+            <!-- two people division -->
+            <div class="productFeatures">
+              <div>
+                <img src="profile-2user.svg user" />
+              </div>
+              <div class="miniText">
+                <p>2 people</p>
+              </div>
+            </div>
+            <!-- end of two people division -->
+          </div>
+          <!-- product details finish here -->
+
+          <div class="product-Biked-footer">
+            <!-- price bar starts form here -->
+            <h2>
+              <span class="priceTag"> $96.00/ </span>
+              <span class="priceTime"> day </span>
+            </h2>
+            <!-- end of price bar -->
+            <a href="register.php" class="BikeRental">Rent</a>
+          </div>
+          <!-- end of rent button -->
+        </div>
+        <!-- end of one column -->
+        <div class="BikeBikeds">
+          <!-- this is starting of Biked -->
+          <div class="headLine">
+            <div class="BikedHead">
+              <h4>Honda Shine 125</h4>
+              <p class="BikedParagraph">Sport</p>
+            </div>
+            <img class="redLike" src="emptyLike.svg" alt="unLike" />
+          </div>
+          <img
+            class="BikePosition"
+            src="honda shine 125.svg"
+            alt="Honda Shine 125"
+            width="220"
+            height="190"
+          />
+
+          <!-- product details start from here -->
+          <div class="product-details">
+            <!-- gas-station division -->
+            <div class="productFeatures">
+              <div>
+                <img src="gas-station.svg" alt="gas-station" />
+              </div>
+              <div class="miniText">
+                <p>80L</p>
+              </div>
+            </div>
+            <!-- end of gas-station division -->
+
+            <!-- Manual-drive division -->
+            <div class="productFeatures">
+              <div>
+                <img src="Bike.svg" alt="manual-drive" />
+              </div>
+              <div class="miniText">
+                <p>Manual</p>
+              </div>
+            </div>
+            <!-- end of manual division -->
+
+            <!-- two people division -->
+            <div class="productFeatures">
+              <div>
+                <img src="profile-2user.svg" alt="two user" />
+              </div>
+              <div class="miniText">
+                <p>2 people</p>
+              </div>
+            </div>
+            <!-- end of two people division -->
+          </div>
+          <!-- product details finish here -->
+
+          <div class="product-Biked-footer">
+            <!-- price bar starts form here -->
+            <h2>
+              <span class="priceTag"> $80.00/ </span>
+              <span class="priceTime"> day </span>
+              <p class="priceTime" style="text-decoration: line-through">
+                $100.00
+              </p>
+            </h2>
+            <!-- end of price bar -->
+            <a href="register.php" class="BikeRental">Rent</a>
+          </div>
+          <!-- end of rent button -->
+        </div>
+        <!-- end of one column -->
+      </div>
+      <!-- end of one row -->
+      <div class="productBiked-row2">
+        <!-- this is row one-->
+        <div class="BikeBikeds">
+          <!-- this is starting of Biked -->
+          <div class="headLine">
+            <div class="BikedHead">
+              <h4>Honda Beet Street</h4>
+              <p class="BikedParagraph">SUV</p>
+            </div>
+            <img class="redLike" src="Like.svg" alt="Like" />
+          </div>
+          <img
+            class="BikePosition"
+            src="honda beet street.svg"
+            alt="Honda Beet Street"
+            width="220"
+            height="190"
+          />
+
+          <!-- product details start from here -->
+          <div class="product-details">
+            <!-- gas-station division -->
+            <div class="productFeatures">
+              <div>
+                <img src="gas-station.svg" alt="gas-station" />
+              </div>
+              <div class="miniText">
+                <p>70L</p>
+              </div>
+            </div>
+            <!-- end of gas-station division -->
+
+            <!-- Manual-drive division -->
+            <div class="productFeatures">
+              <div>
+                <img src="Bike.svg" alt="manual-drive" />
+              </div>
+              <div class="miniText">
+                <p>Manual</p>
+              </div>
+            </div>
+            <!-- end of manual division -->
+
+            <!-- two people division -->
+            <div class="productFeatures">
+              <div>
+                <img src="profile-2user.svg" alt="two user" />
+              </div>
+              <div class="miniText">
+                <p>2 people</p>
+              </div>
+            </div>
+            <!-- end of two people division -->
+          </div>
+          <!-- product details finish here -->
+
+          <div class="product-Biked-footer">
+            <!-- price bar starts form here -->
+            <h2>
+              <span class="priceTag"> $72.00/ </span>
+              <span class="priceTime"> day </span>
+              <p class="priceTime" text-decoratio="line-through">$80.00</p>
+            </h2>
+            <!-- end of price bar -->
+            <a href="rent.php" class="BikeRental">Rent</a>
+          </div>
+          <!-- end of rent button -->
+        </div>
+        <!-- end of one column -->
+        <div class="BikeBikeds">
+          <!-- this is starting of Biked -->
+          <div class="headLine">
+            <div class="BikedHead">
+              <h4>Honda CD110 Dream</h4>
+              <p class="BikedParagraph">SUV</p>
+            </div>
+            <img class="redLike" src="Like.svg" alt="Like" />
+          </div>
+          <img
+            class="BikePosition"
+            src="cd110-color-blue2.png"
+            alt="cd110-color-blue2"
+            width="220"
+            height="190"
+          />
+
+          <!-- product details start from here -->
+          <div class="product-details">
+            <!-- gas-station division -->
+            <div class="productFeatures">
+              <div>
+                <img src="gas-station.svg" alt="gas-station" />
+              </div>
+              <div class="miniText">
+                <p>80L</p>
+              </div>
+            </div>
+            <!-- end of gas-station division -->
+
+            <!-- Manual-drive division -->
+            <div class="productFeatures">
+              <div>
+                <img src="Bike.svg" alt="manual-drive" />
+              </div>
+              <div class="miniText">
+                <p>Manual</p>
+              </div>
+            </div>
+            <!-- end of manual division -->
+
+            <!-- two people division -->
+            <div class="productFeatures">
+              <div>
+                <img src="profile-2user.svg" alt="two user" />
+              </div>
+              <div class="miniText">
+                <p>2 people</p>
+              </div>
+            </div>
+            <!-- end of two people division -->
+          </div>
+          <!-- product details finish here -->
+
+          <div class="product-Biked-footer">
+            <!-- price bar starts form here -->
+            <h2>
+              <span class="priceTag"> $80.00/ </span>
+              <span class="priceTime"> day </span>
+            </h2>
+            <!-- end of price bar -->
+            <a href="register.php" class="BikeRental">Rent</a>
+          </div>
+          <!-- end of rent button -->
+        </div>
+        <!-- end of one column -->
+        <div class="BikeBikeds">
+          <!-- this is starting of Biked -->
+          <div class="headLine">
+            <div class="BikedHead">
+              <h4>Honda CB650R</h4>
+              <p class="BikedParagraph">SUV</p>
+            </div>
+            <img class="redLike" src="emptyLike.svg" alt="unLike" />
+          </div>
+          <img
+            class="BikePosition"
+            src="Honda CB 200X.png"
+            alt="honda-cb650r"
+            width="220"
+            height="190"
+          />
+
+          <!-- product details start from here -->
+          <div class="product-details">
+            <!-- gas-station division -->
+            <div class="productFeatures">
+              <div>
+                <img src="gas-station.svg" alt="gas-station" />
+              </div>
+              <div class="miniText">
+                <p>90L</p>
+              </div>
+            </div>
+            <!-- end of gas-station division -->
+
+            <!-- Manual-drive division -->
+            <div class="productFeatures">
+              <div>
+                <img src="Bike.svg" alt="manual-drive" />
+              </div>
+              <div class="miniText">
+                <p>Manual</p>
+              </div>
+            </div>
+            <!-- end of manual division -->
+
+            <!-- two people division -->
+            <div class="productFeatures">
+              <div>
+                <img src="profile-2user.svg" alt="two user" />
+              </div>
+              <div class="miniText">
+                <p>2 people</p>
+              </div>
+            </div>
+            <!-- end of two people division -->
+          </div>
+          <!-- product details finish here -->
+
+          <div class="product-Biked-footer">
+            <!-- price bar starts form here -->
+            <h2>
+              <span class="priceTag"> $74.00/ </span>
+              <span class="priceTime"> day </span>
+            </h2>
+            <!-- end of price bar -->
+            <a href="register.php" class="BikeRental">Rent</a>
+          </div>
+          <!-- end of rent button -->
+        </div>
+        <!-- end of one column -->
+        <div class="BikeBikeds">
+          <!-- this is starting of Biked -->
+          <div class="headLine">
+            <div class="BikedHead">
+              <h4>Honda NX 200</h4>
+              <p class="BikedParagraph">SUV</p>
+            </div>
+            <img class="redLike" src="Like.svg" alt="Like" />
+          </div>
+          <img
+            class="BikePosition"
+            src="Honda NX 200.png"
+            alt="Honda NX 200"
+            width="220"
+            height="190"
+          />
+
+          <!-- product details start from here -->
+          <div class="product-details">
+            <!-- gas-station division -->
+            <div class="productFeatures">
+              <div>
+                <img src="gas-station.svg" alt="gas-station" />
+              </div>
+              <div class="miniText">
+                <p>80L</p>
+              </div>
+            </div>
+            <!-- end of gas-station division -->
+
+            <!-- Manual-drive division -->
+            <div class="productFeatures">
+              <div>
+                <img src="Bike.svg" alt="manual-drive" />
+              </div>
+              <div class="miniText">
+                <p>Manual</p>
+              </div>
+            </div>
+            <!-- end of manual division -->
+
+            <!-- two people division -->
+            <div class="productFeatures">
+              <div>
+                <img src="profile-2user.svg" alt="two user" />
+              </div>
+              <div class="miniText">
+                <p>2 people</p>
+              </div>
+            </div>
+            <!-- end of two people division -->
+          </div>
+          <!-- product details finish here -->
+
+          <div class="product-Biked-footer">
+            <!-- price bar starts form here -->
+            <h2>
+              <span class="priceTag"> $80.00/ </span>
+              <span class="priceTime"> day </span>
+            </h2>
+            <!-- end of price bar -->
+            <a href="register.php" class="BikeRental">Rent</a>
+          </div>
+          <!-- end of rent button -->
+        </div>
+        <!-- end of one column -->
+      </div>
+      <!-- end of one row -->
+      <div class="productBiked-row3">
+        <!-- this is row one-->
+        <div class="BikeBikeds">
+          <!-- this is starting of Biked -->
+          <div class="headLine">
+            <div class="BikedHead">
+              <h4>Honda Hornet 2.0</h4>
+              <p class="BikedParagraph">Hatchback</p>
+            </div>
+            <img class="redLike" src="Like.svg" alt="Like" />
+          </div>
+          <img
+            class="BikePosition"
+            src="Honda Hornet 2.0.png"
+            alt="Honda Hornet 2.0"
+            width="220"
+            height="190"
+          />
+
+          <!-- product details start from here -->
+          <div class="product-details">
+            <!-- gas-station division -->
+            <div class="productFeatures">
+              <div>
+                <img src="gas-station.svg" alt="gas-station" />
+              </div>
+              <div class="miniText">
+                <p>70L</p>
+              </div>
+            </div>
+            <!-- end of gas-station division -->
+
+            <!-- Manual-drive division -->
+            <div class="productFeatures">
+              <div>
+                <img src="Bike.svg" alt="manual-drive" />
+              </div>
+              <div class="miniText">
+                <p>Manual</p>
+              </div>
+            </div>
+            <!-- end of manual division -->
+
+            <!-- two people division -->
+            <div class="productFeatures">
+              <div>
+                <img src="profile-2user.svg" alt="two user" />
+              </div>
+              <div class="miniText">
+                <p>2 people</p>
+              </div>
+            </div>
+            <!-- end of two people division -->
+          </div>
+          <!-- product details finish here -->
+
+          <div class="product-Biked-footer">
+            <!-- price bar starts form here -->
+            <h2>
+              <span class="priceTag"> $76.00/ </span>
+              <span class="priceTime"> day </span>
+              <p class="priceTime" text-decoration="line-through">$80.00</p>
+            </h2>
+            <!-- end of price bar -->
+            <a href="register.php" class="BikeRental">Rent</a>
+          </div>
+          <!-- end of rent button -->
+        </div>
+        <!-- end of one column -->
+        <div class="BikeBikeds">
+          <!-- this is starting of Biked -->
+          <div class="headLine">
+            <div class="BikedHead">
+              <h4>XPULSE</h4>
+              <p class="BikedParagraph">Sport</p>
+            </div>
+            <img class="redLike" src="emptyLike.svg" alt="unLike" />
+          </div>
+          <img
+            class="BikePosition"
+            src="xpulse.jpg"
+            alt="xpulse"
+            width="220"
+            height="190"
+          />
+
+          <!-- product details start from here -->
+          <div class="product-details">
+            <!-- gas-station division -->
+            <div class="productFeatures">
+              <div>
+                <img src="gas-station.svg" alt="gas-station" />
+              </div>
+              <div class="miniText">
+                <p>80L</p>
+              </div>
+            </div>
+            <!-- end of gas-station division -->
+
+            <!-- Manual-drive division -->
+            <div class="productFeatures">
+              <div>
+                <img src="Bike.svg" alt="manual-drive" />
+              </div>
+              <div class="miniText">
+                <p>Manual</p>
+              </div>
+            </div>
+            <!-- end of manual division -->
+
+            <!-- two people division -->
+            <div class="productFeatures">
+              <div>
+                <img src="profile-2user.svg" alt="two user" />
+              </div>
+              <div class="miniText">
+                <p>2 people</p>
+              </div>
+            </div>
+            <!-- end of two people division -->
+          </div>
+          <!-- product details finish here -->
+
+          <div class="product-Biked-footer">
+            <!-- price bar starts form here -->
+            <h2>
+              <span class="priceTag"> $80.00/ </span>
+              <span class="priceTime"> day </span>
+            </h2>
+            <!-- end of price bar -->
+            <a href="register.php" class="BikeRental">Rent</a>
+          </div>
+          <!-- end of rent button -->
+        </div>
+        <!-- end of one column -->
+        <div class="BikeBikeds">
+          <!-- this is starting of Biked -->
+          <div class="headLine">
+            <div class="BikedHead">
+              <h4>Honda CRF 300 Rally</h4>
+              <p class="BikedParagraph">Sport</p>
+            </div>
+            <img class="redLike" src="Like.svg" alt="Like" />
+          </div>
+          <img
+            class="BikePosition"
+            src="Color_Section_All_New_CRF300RALLY.png"
+            alt="Honda CRF 300 Rally"
+            width="220"
+            height="190"
+          />
+
+          <!-- product details start from here -->
+          <div class="product-details">
+            <!-- gas-station division -->
+            <div class="productFeatures">
+              <div>
+                <img src="gas-station.svg" alt="gas-station" />
+              </div>
+              <div class="miniText">
+                <p>90L</p>
+              </div>
+            </div>
+            <!-- end of gas-station division -->
+
+            <!-- Manual-drive division -->
+            <div class="productFeatures">
+              <div>
+                <img src="Bike.svg" alt="manual-drive" />
+              </div>
+              <div class="miniText">
+                <p>Manual</p>
+              </div>
+            </div>
+            <!-- end of manual division -->
+
+            <!-- two people division -->
+            <div class="productFeatures">
+              <div>
+                <img src="profile-2user.svg" alt="two user" />
+              </div>
+              <div class="miniText">
+                <p>2 people</p>
+              </div>
+            </div>
+            <!-- end of two people division -->
+          </div>
+          <!-- product details finish here -->
+
+          <div class="product-Biked-footer">
+            <!-- price bar starts form here -->
+            <h2>
+              <span class="priceTag"> $74.00/ </span>
+              <span class="priceTime"> day </span>
+            </h2>
+            <!-- end of price bar -->
+            <a href="register.php" class="BikeRental">Rent</a>
+          </div>
+          <!-- end of rent button -->
+        </div>
+        <!-- end of one column -->
+        <!-- <div class="BikeBikeds">
+          this is starting of Biked -->
+          <!-- <div class="headLine">
+            <div class="BikedHead">
+              <h4>Honda-XR190L</h4>
+              <p class="BikedParagraph">SUV</p>
+            </div>
+            <img class="redLike" src="emptyLike.svg" alt="unLike" /> -->
+          <!-- </div>  -->
+          <!-- <img
+            class="BikePosition"
+            src="Honda-XR190L-Dimensions.png"
+            alt="Honda Honda-XR190L-Dimensions"
+            width="220"
+            height="190"
+          /> -->
+
+          <!-- product details start from here -->
+          <!-- <div class="product-details">
+            <! gas-station division -->
+            <!-- <div class="productFeatures">
+              <div>
+                <img src="gas-station.svg" alt="gas-station" />
+              </div>
+              <div class="miniText">
+                <p>80L</p>
+              </div>
+            </div> -->
+            <!-- end of gas-station division -->
+
+            <!-- Manual-drive division -->
+            <!-- <div class="productFeatures">
+              <div>
+                <img src="BG.svg" alt="manual-drive" />
+              </div>
+              <div class="miniText">
+                <p>Manual</p>
+              </div>
+            </div> -->
+            <!-- end of manual division -->
+
+            <!-- two people division -->
+            <!-- <div class="productFeatures">
+              <div>
+                <img src="profile-2user.svg" alt="two user" />
+              </div>
+              <div class="miniText">
+                <p>2 people</p>
+              </div>
+            </div> -->
+            <!-- end of two people division -->
+          <!-- </div> -->
+          <!-- product details finish here -->
+
+          <!-- <div class="product-Biked-footer"> -->
+            <!-- price bar starts form here -->
+            <!-- <h2>
+              <span class="priceTag"> $80.00/ </span>
+              <span class="priceTime"> day </span>
+            </h2> -->
+            <!-- end of price bar -->
+            <!-- <button class="rentClick">Rent</button> -->
+          <!-- </div> -->
+          <!-- end of rent button -->
+        <!-- </div> -->
+        <!-- end of one column -->
+      <!-- </div>  -->
+      <!-- end of one row -->
+    </div>
+    <!-- end of content page -->
+
+    <!-- <div class="rentalFooter">
+      <div class="leftFooter">
+        <img src="logo.png" />
+        <p class="paraFooter">
+          Our vision is to provide convenience and help increase your sales
+          business.
+        </p>
+ -->
+    <!-- end of footer -->
+    <script src="Home-Bike.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
